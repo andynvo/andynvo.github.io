@@ -1,0 +1,47 @@
+main {
+    padding: 1rem 1rem 0;
+}
+h1 {
+    display: block;
+    border-bottom: 1px solid black;
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+}
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+table td {
+    padding: 0.5em;
+    vertical-align: top;
+}
+table td:first-child {
+    width: 25%;
+}
+div.abstract {
+    position: relative;
+    background-color: rgba(255,255,255,0.25);
+    padding: 0.25em 0.5em;
+}
+p.abstract {
+    display: none;
+    margin-bottom: 0;
+    font-size: 0.95em;
+}
+.read-more {
+    position: absolute;
+    top: 0.25em;
+    right: 0.5em;
+    font-size: 0.9em;
+}
