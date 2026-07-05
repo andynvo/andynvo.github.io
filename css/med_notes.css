@@ -12,13 +12,19 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3px;
+    padding: 5px;
+}
+
 /* Left-side menu */
 #toc {
     position: relative;
     float: left;
     background-color: #dcdbdb;
     border-radius: 10px;
-    width: 25vw;
     padding: 1rem 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -61,12 +67,11 @@ a.toc-1 {
 #content {
     position: relative;
     float: right;
-    width: calc(100% - 25vw);
     padding-left: 1rem;
     padding-top: 1rem;
 }
 
 #content iframe {
     width: 100%;
-    min-height: 80vh;
+    height: 100%;
 }
