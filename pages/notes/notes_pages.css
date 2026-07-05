@@ -82,6 +82,8 @@ h1, h2, h3, h4, h5, h6, .h7 {
 }
 h1 {
     font-size: 2em;
+    border-bottom: 3px solid black;
+    margin-bottom: 1rem;
 }
 h2 {
     font-size: 1.75em;
@@ -101,7 +103,7 @@ h2 + h3 { margin-top: 0; }
 h4 {
     font-size: 1.25em;
     font-style: italic;
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: 0;
 }
 h5 {
@@ -135,11 +137,27 @@ ul, ol {
 }
 p + ul, p + ol { margin-top: -1em; }
 sup, sub { font-size: 0.75em; }
-table, tr, th, td {
-    border: 1px solid black;
+table {
+    border: 0;
     border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-table tr:first-child th {
+table tr,
+table th,
+table td {
+    border: 1px solid black;
+}
+table tr.table-title {
+    border: 0;
+}
+table tr.table-title td {
+    border: 0;
+    background-color: transparent;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+table th {
     background-color: #666;
     color: white;
     font-weight: 700;
@@ -157,7 +175,7 @@ table td ul {
     margin-left: 1.5em;
 }
 
-ul.arrow { list-style-type: "\2BA1\0020   ";}
+ul.down-arrow { list-style-type: "\2BA1\0020   ";}
 ul.diamond { list-style-type: "\25C6\0020  ";}
 ul.multi-diamond { list-style-type: "\2756\0020  ";}
 
@@ -185,21 +203,22 @@ div.article-link {
     font-weight: 600;
 }
 
-table.two-way tr:first-child th {
+table.two-way tr.column-header th {
     background-color: #888;
     color: white;
     font-weight: 700;
     font-variant: small-caps;
     padding: 0.25em 0.5em;
 }
-table.two-way tr:first-child td:first-child {
+table.two-way tr.column-header td:first-child {
     background-color: black;
 }
-table.two-way tr:not(:first-child) th {
+table.two-way tr:not(.column-header) th {
     background-color: #6cd0d3;
     color: black;
     font-weight: 700;
     padding: 0.25em 0.5em;
+    text-align: left;
 }
 
 table.pharm,
