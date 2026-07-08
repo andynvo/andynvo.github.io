@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical & Chemical Foundations of Physiology</title>
+    <link rel="stylesheet" href="../notes_pages.css">
+
+    <style type="text/css">
+        body {
+            background-color: white;
+        }
+        div.TOC {
+            background-color: rgb(140, 140, 255);
+            color: white;
+        }
+        div.TOC a {
+            color: white;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex-container div {
+            margin: auto auto;
+            padding: 0.25em 0.5em;
+        }
+        .grid-1x2 {
+            display: grid;
+            grid-template-columns: 350px auto;
+            column-gap: 1em;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../notes_pages.js"></script>
+
+    <script src="https://kit.fontawesome.com/139e246f7c.js" crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                tags: 'ams'
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Physical & Chemical Foundations of Physiology</h1>
+    <hr>
+    <br>
+    <p id="intro">It should be noted that this section of the physiology subject is <u>not necessary</u> for the training of a medical doctor. However, understanding the following concepts and principles will greatly help you to explain the basic working of the human body in its homeostatic (normal) state and hopefully improve your retention of physiology knowledge.</p>
+    <div class="TOC">
+        <span id="TOC">Table of Contents</span><br>
+        <ol class="TOC">
+            <li><a href="#principles">Core Principles of Physiology</a></li>
+            <li><a href="#pressure-flow">Pressure-driven Flow</a></li>
+            <li><a href="#electricity">Electricity in Physiology</a></li>
+            <li><a href="#chem_imf">Chemical Energy & Intermolecular Forces</a></li>
+            <li>Concentration & Kinetics</li>
+            <li>Diffusion</li>
+            <li>Electrochemical Potential & Free Energy</li>
+        </ol>
+    </div>
+
+    <h2 id="principles">Core Principles of Physiology</h2>
+    <div class="wrapper">
+        <div class="figure" style="float: right; margin-left: 1em; max-width: 50vw;"><img src="img/organ-systems-physiology-feher.png" alt="Organ systems of human body"><span class="title">Source: <i>Quantitative Human Physiology</i>, p.4</span></div>
+        <p><i>Human physiology is the integrated study of the normal function of the human body.</i> Organ systems work together to produce overall body behavior. In physiology, a <b>system</b> is usually considered to be a group of organs that serve some well-defined function of the body. While the parts of a system can be described individually, they work together to produce the overall behavior of the system. Physiological systems have recursive heirarchical levels of organizations and functions, where each level comprises of smaller parts and elements of the same level work cohesively to produce the next level.</p>
+        <div class="notice" style="max-width: 50vw; margin: 0;">
+            <b>Extra</b>
+            <div class="read-more">[<a href="javascript:void(0)" class="read-more"></a>]</div>
+            <div class="extra-content">Reductionism is a scentific philosophy that seeks to desdribe a system on the basis of its components. It is also the experimental procedure by which parts of a system are isolated and studied. The results are then put together, called "reconstitution" which is a theoretical procedure.</div>
+        </div>
+        <h3>Cells are the Organization Unit of Life</h3>
+        <p>Large, multicellular organisms, such as humans, are made of many different types of cells. These cells vary in shape, size, and function, but they all share some common characteristics. For example, almost all cells have a <b>cell membrane</b>, also called a <b>plasma membrane</b>, and most contain a <b>nucleus</b> within which is the genetic material. The exception being RBCs (erythrocytes).</p>
+        <p>Like on an organismal level, individual cells also have their <b>phenotype</b>, which is ultimately the expression of their proteins. While all cells within an organism (with the exception of germ cells and RBCs) have the same <b>genotype</b> (genetic material), their phenotype differs due to gene regulation (i.e., turning on and off certian genes).</p>
+        <div class="figure" style="width: auto;">
+            <img src="img/cell-types-physiology-feher.png" alt="Different human cell types" width="500px">
+            <span class="title">Examples of different cell types in humans. (source: <i>Quantitative Human Physiology</i>, p.7)</span>
+        </div>
+        <h3>Homeostasis is the Central Theme of Physiology</h3>
+        <p>Cell survival depends on maintenance of a constant internal environment. Our cells are surrounded by an extracellular environment consisting of extracellular matrix (ECM) and interstitial fluid. As nutrients, wastes, and other molecules travel between the plasma membrane (through diffusion or passive/active transport), the cell needs to respond accordingly to modulate the concentration of each molecule within each compartment. A shift too far away from equilibrium will induce cell stress and eventually cell death.</p>
+        <div class="figure">
+            <img src="img/cell-compartments-physiology-feher.png" alt="Cell compartments">
+            <span class="title">Transport of nutrients and wastes across cellular compartments.<br>(source: <i>Quantitative Human Physiology</i>, p.7)</span>
+        </div>
+        <h3>Evolution is an Efficient Cause of Human Body over Longtime Scales</h3>
+        <p>Evolution was postulated to explain the diveristy of life forms by Charles Darwin (1809-1892) in the <i>On the Origin of Species</i> in 1858. He proposed natural selection as a method by which species change over time. According to natural selection, there is variation among individuals within a population, and when the environment changes, those with compatible traits are able to adapt, survive, and pass on their genes to the next generation. Over time, this results in increased prevelance of favorable traits. While evolution can help to explain why we have certain traits, it doesn't help explain the day-to-day working of our body.</p>
+        <div class="notice">
+             <b>Extra</b>
+            <div class="read-more">[<a href="javascript:void(0)" class="read-more"></a>]</div>
+            <div class="extra-content">
+                <ul>
+                    <li>Robustness measures the ability of the body to respond to environmental challenges.</li>
+                    <li>Regulation of genome may explain the fast pace of evolution.
+                        <ul>
+                            <li>It has been noticed among evolutionary biologists that mutations alone do not account for the rapid rate of evolution and are only a small part of the story.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3>Living Beings Transform Energy & Matter</h3>
+        <p>Activities required for life needs input of energy and matter (usually in the form of food and water). That said, living things must comply with the conservation laws. Therefore, the difference between energy or mass coming in and out are absorbed by the body:</p>
+        <div class="flex-container">
+            <div>
+                \begin{equation}
+                    M_{in} - M_{out} = \Delta M_{body}
+                \end{equation}
+                \begin{equation}
+                    E_{in} - E_{out} = \Delta E_{body}
+                \end{equation}
+            </div>
+            <div class="figure">
+                <img src="img/energy-matter-balance-physiology-feher.png" alt="Mass and energy balance of the body" width="350px">
+                <span class="title">Overview of mass and energy balance.<br>(source: <i>Quantitative Human Physiology</i>, p.10)</span>
+            </div>
+        </div>
+        <h3>Function Follows Form</h3>
+        <p>Almost all processes carried out by the body, at all levels of organization, depend on the 3D structure of some component. The structure both enables function and constrains it, by determining what can be done and how fast it can be accomplished These structural considerations apply at the molecular level, at which the three-dimensional shape of protein surfaces determines what binds to the protein, how it is chemically altered, and how it interacts with other surfaces. These structural considerations apply at the subcellular level, at which the organelles themselves can compartmentalize chemicals and so determine or limit rates of reactions by regulating transfer between the compartments. Structural considerations are also important at the tissue level, at which the topology or spatial distribution of cellular processes allows countercurrent flows, for example, that are crucial in clearing metabolites from the blood or concentrating the urine.  Structural considerations are important at the organ system level at which the structure and arrangement of nerves and tissues is vital for the proper coordination of activity such as the heart beat or gastrointestinal motility. As another example, both the lungs and the gastrointestinal tract involve transfer of gas or nutrients from the environment to the blood. Both lungs and intestine have enormous surface areas and thin barriers—consequences of their structure—to maximize the rate of transport.</p>
+        <p>Coordinated command and control requires signaling at all levels of organization.</p>
+        <p>Many control systems of the body us negative feedback loops.</p>
+        <h3>Positive feedback control systems have different signs for the adjustment to perturbations.</h3>
+        <p>Anticipatory or feed-forward control avoid wide swings in controlled parameters.</p>
+        <p>Development and threshold control mechanism regulate noncyclical and cyclical physiological systems.</p>
+    </div>
+
+    <h2 id="pressure-flow">Pressure-driven Flow</h2>
+    <p>In physics, <b>flow</b> is used to described the transport of matter or energy through space over time, symbolized by \(Q\). For a liquid like water, it is easy to conceptualize flow as the volume of water going through a section of space over time:</p>
+    \begin{equation}
+        Q = \frac{V}{t}
+    \end{equation}
+    <p>where \(Q\) has unit of cubic meter per second (m<sup>3</sup>/s) or liter per second (L/s). For flow of energy or solid matter, we would use the variables \(E\) [J] and \(m\) [g] in place of \(V\), thus changing the units of \(Q\) to J/s or g/s, respectively.</p>
+    <div class="notice">
+        <i class="fa-solid fa-lightbulb"></i> <b>Note</b>
+        <div class="read-more">[<a href="javascript:void(0)" class="read-more"></a>]</div>
+        <div class="extra-content">In physics, units for variables are enclosed in square brackets.</div>
+    </div>
+    <p>Flow is often normalized by the area through which the flow occurs. We call this normalized quantity <b>flux</b>, symbolized by \(J\):</p>
+    \begin{equation}
+        J = \frac{Q}{A}
+    \end{equation}
+    <p>This concept is best illustrated through flux of electrons through a wire, also known as current density. We can derive the equation for this quantity using Ohm's Law (Eqn.&nbsp;5), substituting flow for current, and an assume cross-sectional area \(A\) for the wire.</p>
+    \begin{equation}
+        I = \frac{\Delta V}{R}
+    \end{equation}
+    \begin{align*}
+        J_{current} &= \frac{Q}{A} = \frac{I}{A} \\[6pt]
+        &= \frac{\Delta V}{R A}
+    \end{align*}
+    <p>From here, we can transform the equation further by considering the voltage gradient \(\displaystyle \frac{d \varphi}{dx}\), that is, the change in the voltage over the length of the wire interested. Call this length \(l\), and we get:</p>
+    \begin{align*}
+        J &= \frac{\Delta V}{R A} \\[6pt]
+        &= \frac{l}{l} \frac{\Delta V}{R A} \\[6pt]
+        &= \frac{l}{R A} \frac{\Delta V}{l} \\[6pt]
+        \frac{d \varphi}{dx} = \frac{\Delta V}{l} \Rightarrow J &= \frac{l}{RA}\frac{d \varphi}{dx}
+    \end{align*}
+    We know that \(\displaystyle R \frac{A}{l} \) is equal to the electrical conductivity of a wire \(\rho \), and thus, this equation can be rewritten as:
+    \begin{equation}
+        J = \frac{1}{\rho}\frac{d \varphi}{dx}
+    \end{equation}
+    <p>The final form of this equation is very useful as it is a generalized form relating the flux of matter (or energy) to its cause, which in this case is the voltage gradient. We will see this pattern again when we derive the equation relating bulk fluid flux to the pressure gradient.</p>
+
+    <h3>Deriving the relation between pressure and volumetric fluid flux</h3>
+    <h4>Deriving the Navier-Stokes equation</h4>
+    <p>Before we get to deriving the analogous equation of Eqn. 6 for volumetric flux, let's derive the Navier Stokes equation. This equation describes the motion of fluid in general, based on the conservation of momentum, and from it, we can get more useful information.</p>
+    <p>We first start by considering Newton's 2<sup>nd</sup> Law of Motion.</p>
+    \begin{align}
+        \boldsymbol{F} &= m\boldsymbol{a} \\[6pt]
+        &= m\frac{d\boldsymbol{v}}{dt} \nonumber \\[6pt]
+        \boldsymbol{F} &= \frac{d\boldsymbol{p}}{dt}
+    \end{align}
+    <p>On the left hand side, we have the total force acting on the fluid, which are often expressed in terms of <b>pressure</b>, defined as force per unit area:</p>
+    \begin{equation}
+        P = \frac{F}{A}
+    \end{equation}
+    <p>There is also a mathematically identical term <b>stress</b>, which is more encompassing. While pressure is thought to be acting only perpendicular (normal) to the surface of an object, stress can divided into <b>normal stress</b> \(\sigma \) which acts perpendicular or <b>shear stress</b> \(\tau\) which acts parallel. This is important for our example because in additional to the drawn pressures (normal stress) driving the flow, there is also frictional forces acting along the surfaces of our differential volume. As such, for the time being, we will be using \(\sigma\) and \(\tau\).</p>
+    <div class="grid-1x2">
+        <div class="figure">
+            <img src="img/differential_volume.png" alt="Fluid differential volume for deriving Navier-Stokes in general form">
+            <span class="title">Differential volume and labeled stresses</span>
+        </div>
+        <div>
+            <p>So, continuing our derivation, the left side of Eqn. 8 can be broken up into two main components: body forces \(\boldsymbol{F_m}\) and surfaces forces \(\boldsymbol{F_s}\). Body forces here are things that would uniformly through the volume of the bulk, like gravity. In our case, we don't have that, so we'll take care of it later. We do, however, have surface forces acting on the surface of our differential volume, which push our fluid to flow. Thus, we have:</p>
+            \begin{equation}
+                \boldsymbol{F} = \boldsymbol{F_b} + \boldsymbol{F_s}
+            \end{equation}
+            <p>Now, if we consider superposition, we can break up our \(\boldsymbol{F_s}\) along the \(x\)-, \(y\)-, and \(z\)-direction. Starting with the \(x\)-direction, we have six forces acting on six surfaces&mdash;two of which are normal to the object (labeled as \(\sigma_x\)) and the others are parallel to the surfaces (labeled as \(\tau_{yx}\) and \(\tau_{zx}\)). In addition, we get:</p>
+            \begin{equation*}
+                F_s^x = (\left.\sigma_x\right|_{x+\Delta x} - \left.\sigma_x\right|_x)(\Delta y \Delta z) + (\left.\tau_{yx}\right|_{y+\Delta y} - \left.\tau_{yx}\right|_y)(\Delta x \Delta z) + (\left.\tau_{zx}\right|_{z+\Delta z} - \left.\tau_{zx}\right|_z)(\Delta x \Delta y)
+            \end{equation*}
+            <p>We will further manipulate the equation and then take the limit, giving:</p>
+            \begin{align}
+                F_s^x &= \left(\frac{\left.\sigma_x\right|_{x+\Delta x} - \left.\sigma_x\right|_x}{\Delta x}\right)\Delta x \Delta y \Delta z + \left(\frac{\left.\tau_{yx}\right|_{y+\Delta y} - \left.\tau_{yx}\right|_y}{\Delta y}\right)\Delta x \Delta y \Delta z + \nonumber \\[6pt] 
+                & \left(\frac{\left.\tau_{zx}\right|_{z+\Delta z} - \left.\tau_{zx}\right|_z}{\Delta z}\right)\Delta x \Delta y \Delta z \nonumber \\[6pt]
+                \lim_{\Delta x, \Delta y, \Delta z \to 0} \Rightarrow F_s^x &= \frac{\partial \sigma_x}{\partial x}dxdydz + \frac{\partial \tau_{yx}}{\partial y}dxdydz + \frac{\partial \tau_{zx}}{\partial z}dxdydz \\[6pt]
+            \end{align}
+        </div>
+    </div>
+    <p>From this, we can generalize for all \(F_s^y\) and \(F_s^z\). Then, using the definition of <b>divergence</b> for multivariate function \(\displaystyle \nabla \cdot f(x,y,z) = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} + \frac{\partial f}{\partial z}\), we get:</p>
+    \begin{align}
+        F_s^y &= \frac{\partial \tau_{xy}}{\partial x}dxdydz + \frac{\partial \sigma_y}{\partial y}dxdydz + \frac{\partial \tau_{zy}}{\partial z}dxdydz \\[6pt]
+        F_s^z &= \frac{\partial \tau_{xz}}{\partial x}dxdydz + \frac{\partial \tau_{yz}}{\partial y}dxdydz +  \frac{\partial \sigma_z}{\partial z}dxdydz \\[6pt]
+        \boldsymbol{F_p} &= (\nabla \cdot \boldsymbol{P})dV
+    \end{align}
+    <p>Now, the only remaining force to take care of the \(\boldsymbol{F_b}\). We can define this force as an acceleration field \(\boldsymbol{f}\) that affects our differential volume.</p>
+    \begin{align}
+        \boldsymbol{F_b} &= (dm) \boldsymbol{f} \nonumber \\[6pt]
+        \rho = \frac{m}{dV} \Rightarrow \boldsymbol{F_b} &= \rho \boldsymbol{f} dV
+    \end{align}
+    <p>Now for the momentum, recall from physics that momentum \(p\) is the product of mass \(m\) and velocity \(v\) and mass can be expressed as density \(\rho \) times volume \(V\). With these two definitions, we can get the following:</p>
+    $$
+        p = m \cdot v \\[6pt]
+        p = \rho V \cdot v
+    $$
+    <p>Considering our differential volume \(dV\), we can calculated \(\displaystyle \frac{d\boldsymbol{p}}{dt}\):</p>
+    \begin{align}
+        \frac{d\boldsymbol{p}}{dt}\ &= \frac{d}{dt} (\rho dV \cdot \boldsymbol{v}) \nonumber \\[6pt]
+        \frac{d\boldsymbol{p}}{dt}\ &= \rho \frac{d\boldsymbol{v}}{dt} dV
+    \end{align}
+    Finally, putting everything together:
+    \begin{align}
+        \boldsymbol{F} &= \frac{d\boldsymbol{p}}{dt} \nonumber \\[6pt]
+        \boldsymbol{F_s} + \boldsymbol{F_b} &= \rho \frac{d\boldsymbol{v}}{dt} dV \nonumber \\[6pt]
+        (\nabla \cdot \boldsymbol{P})\cancel{dV} + \rho \boldsymbol{f} \cancel{dV} &= \rho \frac{d\boldsymbol{v}}{dt} \cancel{dV} \nonumber \\[6pt]
+        \frac{d\boldsymbol{v}}{dt} &= \frac{1}{\rho}(\nabla \cdot \boldsymbol{P}) + \boldsymbol{f}
+    \end{align}
+    <p>This equation is the Navier-Stokes in its differential form. What this equation means is the change in velocity over time of bulk fluid flow is equal to divergence of pressure (pressure gradient) divided by the density, plus any extra forces (e.g., gravity).  First, we need to 
+    \begin{equation}
+        \boldsymbol{J} = \frac{\boldsymbol{Q}}{A} = \frac{A\boldsymbol{v}}{A} = \boldsymbol{v} \\[6pt]
+        \frac{d\boldsymbol{v}}{dt} = \frac{d\boldsymbol{J}}{dt} = \frac{1}{\rho}(\nabla \cdot \boldsymbol{P}) + \boldsymbol{f}
+    \end{equation}
+    Notice that the first term on the right side has no time-dependent component. This is very helpful because the equation because that means it will remain unchanged after integration with respect to time. Now if we ignore any other forces (which they aren't in many of our cases), we can integrate both sides with respect to time and get:
+    \begin{equation}
+        \boldsymbol{J} = \frac{1}{\rho}(\nabla \cdot \boldsymbol{P}) \\[6pt]
+    \end{equation}
+    which you can see is near identical to the previous derivation for electrical flux (current density).</p>
+
+    <h2 id="electricity">Electricity in Physiology</h2>
+    <p><b>Electric charge</b> is a fundamental property of all particles. Most famously, the electron has a charge of -1, the proton a charge of +1, and the neutron a charge of 0. It should be noted that the unit here is <b>elementary charge</b>, which is defined to be +1 for proton and -1 for electron, given the symbol <i>e</i>. The SI unit for charge is the <b>coulomb</b> (C), which is equal to 1 amperes-second (A&#xB7;s), and is given by <i>e</i> = 1.602 176 634 × 10<sup>−19</sup> C.</p>
+
+    <h3>Definitions</h3>
+    <h4>Electric Force</h4>
+    <p>The <b>electrostatic force</b> is the force experienced by two charges on one another. It is given by Coulomb's Law:
+    \begin{equation}
+    \boldsymbol{F} = k_e\frac{q_1q_2}{r^2},
+    \end{equation}
+    where \( \boldsymbol{F} \) is the force [N]; \( k_e \) is the Coulumb's constant [F⋅m<sup>−1</sup>]; \( q_1,q_2 \) are the charges of the particles [C]; and \( r \) is distance between two charges [m]. The direction of the force is given by how a positive charge would experience the force. Typically, this is denoted as (+) for repulsion and (-) for attraction.</p>
+    <p>Coulumb's constant is given as 
+    $$ k_e = \frac{1}{4\pi\kappa\epsilon_0}, $$
+    where \( \epsilon_0 \) is <b>permittivity of free space</b> (8.854 187 8188(14) × 10<sup>−12</sup> F⋅m<sup>−1</sup>) and \( \kappa \) is the <b>dielectric constant</b> of medium between charges. The dielectric constant is the permittivity of said medium (how much they allow electrical field/force to permiate through them) normalized to that of air ("free space"). A substance with a high dielectric constant will limit the electrical interaction between the charges.</p>
+    <h4>Electric Field</h4>
+    <p>The <b>electric field</b> (\( \boldsymbol{E} \) )[N/C] is defined as the electric force experienced by a unit charge at a point in space:
+    \begin{equation}
+        \boldsymbol{E} = \frac{\boldsymbol{F}}{q_{test}}.
+    \end{equation}
+    The direction of the field is given by a positive test charge would experience that force at said point. The electric field can be calculated using the famous Gauss's Law:
+    \begin{equation}
+        \oint \boldsymbol{E} \cdot d\boldsymbol{s} = \frac{q}{\epsilon_0},
+    \end{equation}
+    where \( \boldsymbol{E} \cdot d\boldsymbol{s} \) is dot product of the electric field and the normal vector of a unit area around the charge (see figure) (i.e., the flux of the electric field).</p>
+    <div class="figure">
+        <img src="img/gauss-surface.png" alt="Gaussian surface">
+        <span class="title">Gaussian surface of a positive test charge.<br>(source: <i>Quantitative Human Physiology</i>, p.35)</span>
+    </div>
+    <h4>Electric Potential</h4>
+    <p>The <b>electric potential</b> (\( V, \varphi \)) is the difference in electric potential energy per unit charge between two points in a static electric field. It is calculated as the line integral along an arbitrary path C:
+    $$
+        V_\boldsymbol{E} = - \int_C \boldsymbol E \cdot d\boldsymbol{\ell}.
+    $$
+    More famously, the relationship between the electric potential and electric field is given as
+    \begin{equation}
+        \boldsymbol{E} = - \nabla V_\boldsymbol{E},
+    \end{equation}
+    where the electric field is gradient of the electric potential.</p>
+    <h4>Capacitance</h4>
+    <p><b>Capacitance</b> is the ability to store electric charge. It is defined as:
+    \begin{equation}
+        C = \frac{Q}{V},
+    \end{equation}
+    where <i>C</i> is the capacitance [F, farad], <i>Q</i> is the charge [C, coulomb], and <i>V</i> is the potential [V, volt]. In physics and engineering, we typically associate capacitance with a device called "capacitor". Commonly, an voltage (electric potential) is applied across a parallel-plate capacitor, and the charge is consequently stored and acccumlates until the potential across the plate is equal to the applied voltage. At this point, electric current stops flowing.</p>
+    <div class="flex-container">
+        <div class="figure">
+            <img src="img/parallel-plate-capacitor-circuit.png" alt="Parallel plate capacitor">
+            <span class="title">source: p. 35</span>
+        </div>
+        <div class="figure">
+            <img src="img/cell-membrane-capacitor.png" alt="Cell membrane as capacitor">
+            <span class="title">source: p.36</span>
+        </div>
+    </div>
+    <p>In biology, cell membranes behave like capacitors. The interfaces of the membrane comprise hyrophilic heads of phospholipids, while the insulating layer comprises the hydrophobic tails. The capacitance of an capacitor can be caculated as follow:
+    $$
+        C = \frac{\kappa\epsilon_0A}{d},
+    $$
+    where \( \kappa \) is the dielectric constant of the material between the plate, \( \epsilon_0 \) is the permittivity of free space, <i>A</i> is the surface area of single plate, and <i>d</i> is the distance between the plates.</p>
+    <h4>Electric Current in a Biological System</h4>
+    <p>When we speak about current in a biological system, we are referring to the movement of ions as opposed to the movement of charged subatomic particles as in physics. As such, the <b>current</b> in a biological system is synonymous with the <b>flux of ions</b> (Na<sup>+</sup>, K<sup>+</sup>, Cl<sup>-</sup>, etc.).</p>
+
+    <h2 id="chem_imf">Chemical Energy & Intermolecular Forces</h2>
+    <h3>Chemistry of Life</h3>
+    - basic atomic structure (plus extra content)
+    - electric dipoles
+    - steric hindrance
+    
+    <h3>Intermolecular Interactions</h3>
+    - London dispersion forces
+    - dipole-dipole interaction
+    - hydrogen bonding
+    
+    <h2 id="ref">References</h2>
+    <ol>
+        <li><i>Quantitative Human Physiology</i>, 2ed, by Joseph Feher</li>
+    </ol>
+</body>
+</html>
