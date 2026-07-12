@@ -23,7 +23,7 @@ h2 {
 #toc {
     position: relative;
     float: left;
-    background-color: #dcdbdb;
+    background-color: #DCDBDB;
     border-radius: 10px;
     padding: 1rem 0.5rem;
     margin-top: 1rem;
@@ -45,7 +45,7 @@ h2 {
 }
 
 a.toc-1 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 #toc-links ul {
@@ -57,9 +57,17 @@ a.toc-1 {
     display: none;
 }
 
-/* Change the link and background color on hover */
-#toc-links li a:hover {
-    background-color: #555;
+/* Clicked menu link state applied by jQuery */
+#toc-links a.is-active {
+    font-weight: 700 !important;
+    background-color: #666 !important;
+    color: white !important;
+}
+
+/* Hover states for clicked and unclicked menu links */
+#toc-links a:hover,
+#toc-links a.is-active:hover {
+    background-color: #333;
     color: white;
 }
 
